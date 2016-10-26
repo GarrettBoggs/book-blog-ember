@@ -1,0 +1,55 @@
+$articleTileHeight: 250px;
+
+.article-tile{
+  height:$articleTileHeight;
+  max-width:25%;
+  background: lightgray;
+  margin: 20px;
+  border: solid darkgray;
+  .article-tile-img{
+    img{
+      width:100%;
+      max-height: $articleTileHeight *.75;
+    }
+  }
+  .article-tile-info{
+    position: absolute;
+    bottom: 0;
+    opacity: 0.9;
+    left: 12.5%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background-color: white;
+    height: 50%;
+    width: 75%;
+    text-align: center;
+    padding-top: 15px;
+    box-shadow: 10px 10px 10px gray;
+  }
+}
+
+.article{
+  .article-header{
+    text-align: center;
+  }
+
+  .article-img{
+    img{
+        height: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+  .author-box{
+    .author-text{
+      float:left;
+    }
+    img{
+      height: 150px;
+      
+    }
+  }
+  .article-content{
+
+  }
+}

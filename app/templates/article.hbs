@@ -1,0 +1,24 @@
+<div class="article">
+  <div class="container">
+
+    <div class="article-header">
+      <h1>{{model.title}}</h1>
+    </div>
+      <div class="article-img">
+        <img class="img img-responsive" src={{model.image}} alt="" />
+      </div>
+    <hr>
+
+      <div class="author-box">
+        <div class="author-text">
+        </div>
+        <img class="img img-responsive" src={{model.authorPhoto}} alt="" />
+        <h1>{{model.author}}</h1>
+      </div>
+    <hr>
+    <div class="article-content">
+      {{model.content}}
+    </div>
+    <button {{action 'delete' model}} class="btn btn-danger">Delete</button>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Welcome to Home</h1>
+  <div class="row">
+    {{#each model as |article|}}
+      <div class="article-tile col-xs-4">
+        {{article-tile article=article}}
+      </div>
+    {{/each}}
+  </div>
+
+
+
+
+  {{new-post saveArticle="articleToDb"}}
+</div>
