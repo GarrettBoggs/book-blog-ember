@@ -1,1 +1,30 @@
-
+{{#if updateArticleForm}}
+  <h4>Update {{rental.owner}}'s {{rental.type}}</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label>
+        {{input value=title id="title placeholder=article.title"}}
+      </div>
+      <div class="form-group">
+        <label for="author">Author</label>
+        {{input value=author id="author placeholder=article.author"}}
+      </div>
+      <div class="form-group">
+        <label for="authorPhoto">Author Photo</label>
+        {{input value=authorPhoto id="authorPhoto placeholder=article.authorPhoto"}}
+      </div>
+      <div class="form-group">
+        <label for="content">Content</label>
+        {{textarea value=content id="content placeholder=article.content"}}
+      </div>
+      <div class="form-group">
+        <label for="image">Image</label>
+        {{input value=image id="image placeholder=article.image"}}
+      </div>
+      <button {{action 'update' article}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateArticleForm'}}>Update</button>
+{{/if}}
