@@ -3,28 +3,29 @@
     "authorPhoto":"https://thoughtcatalog.files.wordpress.com/2013/07/kljrlkgjlkerjglerlkj.jpg?w=584&h=807",
     "title":"10 Classics to look for at yard sales",
     "content":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    "image":"http://venturegalleries.com/wp-content/uploads/2013/10/Garage-sale-books.jpg"
+    "image":"http://venturegalleries.com/wp-content/uploads/2013/10/Garage-sale-books.jpg",
+    "category": "shopping"
   }, {
       "author":"Steven Kind",
       "authorPhoto":"https://upload.wikimedia.org/wikipedia/commons/e/e3/Stephen_King,_Comicon.jpg",
       "title":"Quantity is Quality",
       "content":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "image":"http://cdn.mhpbooks.com/2012/05/Giant-Book.png"
+      "image":"http://cdn.mhpbooks.com/2012/05/Giant-Book.png",
+      "category": "technique"
     }, {
         "author":"Christopher Paolini",
         "authorPhoto":"https://upload.wikimedia.org/wikipedia/commons/c/c2/Christopher_Paolini_-_Lucca_Comics_and_Games_2012.JPG",
         "title":"You too can write whilst a child",
         "content":"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "image":"https://readingeggs.files.wordpress.com/2015/10/teach-child-write-name.jpg?w=769&h=516"
+        "image":"https://readingeggs.files.wordpress.com/2015/10/teach-child-write-name.jpg?w=769&h=516",
+        "category":"technique"
   }],
 
-    "reviews": [{
-    "author": "Andrea",
-    "rating": 4,
-    "content": "Did not fall down."
+    "comments": [{
+    "user": "Jimmy",
+    "content": "Great post!"
   }, {
-    "author": "Alex",
-    "rating": 9,
-    "content": "Nice view of the volcano!"
+    "user": "Alex",
+    "content": "Could use some more info, but not bad."
   }]
 }

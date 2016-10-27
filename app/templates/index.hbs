@@ -1,21 +1,8 @@
 <div class="container">
-  <h1>Welcome to Home</h1>
+  <h1 id="header">Gutenburg Book Review</h1>
   <div class="row">
-    {{#each model.articles as |article|}}
-      <div class="article-tile col-xs-4">
-        {{article-tile article=article}}
-      </div>
-    {{/each}}
+    {{articles-list articles=model.articles}}
   </div>
-
-    <h2> All Reviews </h2>
-
-    <ul>
-      {{#each model.reviews as |review|}}
-        <li>{{review.rating}} - {{review.content}} - by {{review.author}}</li>
-      {{/each}}
-    </ul>
- 
 
   {{new-post saveArticle="articleToDb"}}
 </div>

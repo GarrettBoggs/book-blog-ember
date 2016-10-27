@@ -1,0 +1,11 @@
+{{#each articles as |article|}}
+  {{#if chosenCategory }}
+    <div class="article-tile col-xs-4">
+        {{article-tile article=article}}
+    </div>
+  {{/if}}
+{{/each}}
+
+<button {{action 'setTechnique'}}> Look for technique </button>
+
+<button {{action 'setShopping'}}> Look for shopping </button>

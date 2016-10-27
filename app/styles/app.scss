@@ -1,5 +1,6 @@
 $articleTileHeight: 250px;
 
+
 .article-tile{
   height:$articleTileHeight;
   max-width:25%;
@@ -46,10 +47,33 @@ $articleTileHeight: 250px;
     }
     img{
       height: 150px;
-      
+
     }
   }
   .article-content{
-
+    background-color: rgba(220,220,220, 0.8);
+    border: 1px solid;
+    padding: 10px;
   }
+}
+
+.articleHeading{
+  color:white;
+  font-family: 'Merienda', cursive;
+}
+body{
+  background: url("http://www.theblogshop.co.uk/blog/wp-content/uploads/2012/11/Pages-Of-A-Book.jpg");
+}
+
+button{
+  margin: 20px;
+}
+
+#header{
+  text-align: center;
+  background: lightgray;
+  border: solid black;
+  box-shadow: 10px 10px 5px gray;
+  font-family: 'Merienda', cursive;
+  padding: 10px;
 }

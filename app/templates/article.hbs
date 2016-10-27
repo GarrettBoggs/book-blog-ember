@@ -2,25 +2,34 @@
   <div class="container">
 
     <div class="article-header">
-      <h1>{{model.title}}</h1>
+      <h1 class="articleHeading">{{model.article.title}}</h1>
     </div>
       <div class="article-img">
-        <img class="img img-responsive" src={{model.image}} alt="" />
+        <img class="img img-responsive" src={{model.article.image}} alt="" />
       </div>
     <hr>
 
       <div class="author-box">
         <div class="author-text">
         </div>
-        <img class="img img-responsive" src={{model.authorPhoto}} alt="" />
-        <h1>{{model.author}}</h1>
+        <img class="img img-responsive" src={{model.article.authorPhoto}} alt="" />
+        <h1 class="articleHeading">{{model.article.author}}</h1>
       </div>
     <hr>
     <div class="article-content">
-      {{model.content}}
+      {{model.article.content}}
     </div>
     <button {{action 'delete' model}} class="btn btn-danger">Delete</button>
 
-    {{update-article article=model update="update"}}
+    {{update-article article=model.article update="update"}}
+
+    {{new-comment saveComment="saveComment" article=model.article}}
+
+    <h2 class="articleHeading"> Comments </h2>
+    <ul>
+      {{#each model.article.comments as |comment|}}
+        {{comment-tile comment=comment destroyComment="destroyComment"}}
+      {{/each}}
+    </ul>
   </div>
 </div>
