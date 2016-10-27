@@ -25,11 +25,11 @@
 
     {{new-comment saveComment="saveComment" article=model.article}}
 
-    <h2 class="articleHeading"> Comments </h2>
-    <ul>
-      {{#each model.article.comments as |comment|}}
-        {{comment-tile comment=comment destroyComment="destroyComment"}}
-      {{/each}}
-    </ul>
+        <h2 class="articleHeading"> Comments </h2>
+        <ul>
+          {{#each model.article.comments as |comment|}}
+            {{comment-tile comment=comment destroyComment="destroyComment" editComment="editComment2"}}
+          {{/each}}
+        </ul>
   </div>
 </div>

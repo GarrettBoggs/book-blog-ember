@@ -1,1 +1,19 @@
-<li>{{comment.user}} - {{comment.content}} <button {{action 'delete' comment}}>Delete Comment</button></li>
+<li>{{comment.user}} - {{comment.content}}</li>
+    <button {{action 'delete' comment}} class="pull-left btn-sm btn-danger">Delete Comment</button>
+    {{#if editCommentForm}}
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="user">User</label>
+          {{input value=user id="user" placeholder=article.user}}
+        </div>
+        <div class="form-group">
+          <label for="content">Content</label>
+          {{input value=content id="content placeholder=comment.content"}}
+        </div>
+        <button class="btn btn-default" {{action 'edit' comment}}>Save</button>
+      </form>
+    </div>
+    {{else}}
+    <button {{action 'editCommentForm'}} class="btn-sm btn-default">Edit Comment</button>
+    {{/if}}
